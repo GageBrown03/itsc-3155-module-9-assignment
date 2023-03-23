@@ -32,14 +32,14 @@
     <thead>
       <tr>
         <th>ID</th>
-        <th style="padding-left:5rem;">Title</th>
+        <th style="padding-left:4rem;">Title</th>
       </tr>
     </thead>
     <tbody>
       {% for movie_id, movie in movie_repository.get_all_movies().items() %}
         <tr>
           <td>{{ movie_id }}</td>
-          <td style="padding-left:5rem;">{{ movie.title }}</td>
+          <td style="padding-left:4rem;">{{ movie.title }}</td>
         </tr>
       {% endfor %}
     </tbody>
